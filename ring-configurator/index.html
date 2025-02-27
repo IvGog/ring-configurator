@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Configurator</title>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+                "three/examples/jsm/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <!-- GUI Контроли -->
+    <div class="controls">
+        <div class="metal-section">
+            <h3>Избор на метал</h3>
+            <div class="metal-selector">
+                <div class="metal-option">
+                    <button data-metal="Gold"></button>
+                    <span>Злато</span>
+                </div>
+                <div class="metal-option">
+                    <button data-metal="Silver"></button>
+                    <span>Сребро</span>
+                </div>
+                <div class="metal-option">
+                    <button data-metal="RoseGold"></button>
+                    <span>Розово злато</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stone-section">
+            <h3>Избор на камък</h3>
+            <div class="stone-subsection">
+                <h4>Халцедон</h4>
+                <div class="stone-selector">
+                    <div class="stone-option">
+                        <button data-stone="white" data-texture="white.jpg"></button>
+                        <span>Бял халцедон</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="blue_light" data-texture="blue_light.jpg"></button>
+                        <span>Син халцедон А</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="blue" data-texture="blue.jpg"></button>
+                        <span>Син халцедон АА</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="blue_dark" data-texture="blue_dark.jpg"></button>
+                        <span>Син халцедон ААА</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="grey" data-texture="grey.jpg"></button>
+                        <span>Сив халцедон</span>
+                    </div>
+                </div>
+            </div>
+            <div class="stone-subsection">
+                <h4>Яспис</h4>
+                <div class="stone-selector">
+                    <div class="stone-option">
+                        <button data-stone="green" data-texture="green.jpg"></button>
+                        <span>Зелен яспис</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="red" data-texture="red.jpg"></button>
+                        <span>Червен яспис</span>
+                    </div>
+                    <div class="stone-option">
+                        <button data-stone="yellow" data-texture="yellow.jpg"></button>
+                        <span>Жълт яспис</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
